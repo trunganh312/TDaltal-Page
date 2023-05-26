@@ -5,27 +5,768 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="shortcut icon"
+      href="https://play-lh.googleusercontent.com/uVQVuEa7qsDe-SDDIev9fhLhkZLFfgCNeBwx_7JCc0N17facPX2_4si0kDnyHFNMC9Q"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/reponsive.css" />
+    <link rel="stylesheet" href="./sass/css/app.css" />
+
     <title>TDental | Phần mềm quản lý nha khoa</title>
   </head>
   <body>
+    <div class="app">
+      <header class="container-fluid header center">
+        <div class="container py-4 center">
+          <div class="row">
+            <div class="col-lg-5 col-sm-12 col-xs-12">
+              <a href="#">
+                <img
+                  src="https://tdental.vn/assets/images/logo-tdental.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <nav class="col-lg-7 hidden">
+              <ul class="header__menu">
+                <li class="header__item">
+                  <a class="header__link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#price-page">Bảng giá</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#contact-page">Liên hệ</a>
+                </li>
+                <li class="header__item">
+                  <button
+                    type="button"
+                    class="btn-primary px-4 py-3 button-primary"
+                  >
+                    Đăng nhập
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="hide-btn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="white"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <a href="#">
+                  <img
+                    src="https://tdental.vn/assets/images/logo-tdental-aside.svg"
+                    alt=""
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#price-page">Bảng giá</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#contact-page">Liên hệ</a>
+                  </li>
+                  <li class="nav__item">
+                    <button
+                      type="button"
+                      class="btn-primary button-primary px-4"
+                    >
+                      Đăng nhập
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="home-page">
+        <div class="container-fluid slide">
+          <div class="container">
+            <div class="row hidden">
+              <!-- desktop -->
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="slide__content">
+                  <p class="h2">Phần mềm quản lý nha khoa chuyên nghiệp nhất</p>
+                  <p class="h1">TDental</p>
+                  <ul class="content-list">
+                    <li class="content-item">
+                      <span class="content-check"></span> Quản lý nhanh chóng,
+                      tiết kiệm thời gian
+                    </li>
+                    <li class="content-item">
+                      <span class="content-check"></span> Chuyên nghiệp hóa quy
+                      trình làm việc của phòng khám
+                    </li>
+                    <li class="content-item">
+                      <span class="content-check"></span> Nâng cao hiệu quả kinh
+                      doanh nhanh chóng và liên tục
+                    </li>
+                  </ul>
+                  <span>
+                    <button
+                      type="button"
+                      class="btn-primary px-4 py-3 button-primary"
+                    >
+                      Dùng thử miễn phí
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="slide__logo">
+                  <img
+                    src="./image/phan-mem-quan-ly-nha-khoa-tdental.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-block">
+              <!-- Mobile, tablet -->
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="slide__content">
+                  <p class="h2">Phần mềm quản lý nha khoa chuyên nghiệp nhất</p>
+                  <p class="h1">TDental</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="slide__logo">
+                  <img
+                    src="./image/phan-mem-quan-ly-nha-khoa-tdental.webp"
+                    alt=""
+                  />
+                </div>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span class="content-check"></span> Quản lý nhanh chóng,
+                    tiết kiệm thời gian
+                  </li>
+                  <li class="content-item">
+                    <span class="content-check"></span> Chuyên nghiệp hóa quy
+                    trình làm việc của phòng khám
+                  </li>
+                  <li class="content-item">
+                    <span class="content-check"></span> Nâng cao hiệu quả kinh
+                    doanh nhanh chóng và liên tục
+                  </li>
+                </ul>
+                <span>
+                  <button
+                    type="button"
+                    class="btn-primary px-4 py-3 button-primary"
+                  >
+                    Dùng thử miễn phí
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature container-fluid">
+          <div class="container container-sm">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <h1 class="h1 text-center mb-5 mt-5">Tính năng nổi bật</h1>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card">
+                  <img
+                    src="/image/quan-ly-cong-no.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="title">Quản lý công nợ</div>
+                    <div class="content">
+                      <p>
+                        Cho bạn những số liệu thống kê chi tiết và chính xác
+                        nhất về công nợ của khách hàng và nhà cung cấp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 mt-5 mb-5">
+                <div class="text-center">
+                  <button
+                    class="btn-primary btn px-4 py-3 button-primary"
+                    title="TDental | Phần mềm quản lý nha khoa chuyên nghiệp nhẩt"
+                  >
+                    Dùng thử miễn phí
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="price-page">
+        <div class="container-fluid price text-white p-5">
+          <div class="container">
+            <div class="price__content">
+              <p class="h3 text-white">Bảng giá phần mềm nha khoa</p>
+              <span class="h1">TDental</span>
+
+              <div class="price__desc">
+                Bạn có thể dùng thử miễn phí trước khi quyết định sử dụng!
+              </div>
+              <button
+                class="btn-primary px-5 py-3 button-primary"
+                title="Bảng giá phần mềm nha khoa"
+              >
+                Dùng thử
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="price__body mt-5 mb-5">
+          <div class="container">
+            <p class="h1 text-center mb-5">Bảng giá các gói dịch vụ TDental</p>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="price-table">
+                  <div class="price-name">
+                    <p class="h2">Gói TDental</p>
+                  </div>
+                  <div class="price-count text-center">
+                    <p class="mb-0">300,000 đ</p>
+                    <p class="mb-0 desc">1 tháng/1 chi nhánh</p>
+                  </div>
+                  <div class="price-content px-5">
+                    <p class="text-center mb-0">
+                      Dành cho những phòng khám hiện đại.
+                    </p>
+                    <p class="text-center"></p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn phiếu điều trị
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn lượng khách hàng
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn số người dùng
+                    </p>
+                  </div>
+                  <div class="price-note px-6 py-5 text-center">
+                    <button
+                      class="btn-primary btn px-5 py-3 button-primary"
+                      title="Phần mềm quản lý nha khoa TDental"
+                    >
+                      Dùng Thử Miễn Phí
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="price-table">
+                  <div class="price-name">
+                    <p class="h2">Gói TDental</p>
+                  </div>
+                  <div class="price-count text-center">
+                    <p class="mb-0">500,000 đ</p>
+                    <p class="mb-0 desc">1 tháng/1 chi nhánh</p>
+                  </div>
+                  <div class="price-content px-5">
+                    <p class="text-center mb-0">
+                      Dành cho những phòng khám hiện đại. Cập nhật tính năng
+                      theo xu hướng mới
+                    </p>
+                    <p class="text-center"></p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn phiếu điều trị
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn lượng khách hàng
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn số người dùng
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn số người dùng
+                    </p>
+                    <p class="dflex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#1a4bc2"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                      Không giới hạn số người dùng
+                    </p>
+                  </div>
+                  <div class="price-note px-6 py-5 text-center">
+                    <button
+                      class="btn-primary btn px-5 py-3 button-primary"
+                      title="Phần mềm quản lý nha khoa TDental"
+                    >
+                      Dùng Thử Miễn Phí
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="price-table-endow">
+                  <div class="price-name">
+                    <p class="h1">Ưu đãi</p>
+                  </div>
+                  <div class="table-endow">
+                    <div class="price-count text-center">
+                      <p class="h1 fs-18">Tặng 2 tháng</p>
+                      <p class="desc fs-14">Khi mua gói 1 năm</p>
+                    </div>
+                    <div class="price-count text-center">
+                      <p class="h1 fs-18">Tặng 6 tháng</p>
+                      <p class="desc fs-14">Khi mua gói 2 năm</p>
+                    </div>
+                    <div class="price-count text-center">
+                      <p class="h1 fs-18">Tặng 12 tháng</p>
+                      <p class="desc fs-14">Khi mua gói 3 năm</p>
+                    </div>
+                  </div>
+                  <div class="price-note mb-5 text-center">
+                    <button
+                      class="btn-primary btn px-5 py-3 button-primary"
+                      title="Phần mềm quản lý nha khoa TDental"
+                    >
+                      Dùng Thử Miễn Phí
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-page">
+        <div class="container-fluid contact text-white p-5">
+          <div class="container">
+            <div class="price__content">
+              <p class="h3 text-white">Liên hệ</p>
+              <span class="h1">TDental</span>
+
+              <div class="price__desc">
+                Liên hệ với chúng tôi ngay khi bạn cần
+              </div>
+              <button
+                class="btn-primary px-5 py-3 button-primary"
+                title="Bảng giá phần mềm nha khoa"
+              >
+                Dùng thử
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="contact-content">
+          <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+              <div class="contact-text">
+                <p class="h1">Gửi yêu cầu liên hệ</p>
+                <span>Hãy để TDental giải đáp thắc mắc của quý khách</span>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid p-5" style="background-color: #e6edf8">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="contact-info hide-mobile hidden-tablet">
+                    <ul
+                      class="contact-info-list"
+                      style="
+                        background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+                      "
+                    >
+                      <li class="contact-info-item">
+                        <p class="contact content">Địa chỉ</p>
+                        <p class="content">
+                          54/35 Diệp Minh Châu, Tân Sơn Nhì, Tân Phú
+                        </p>
+                      </li>
+                      <li class="contact-info-item">
+                        <p class="contact content">Điện thoại</p>
+                        <a class="content" href="unsafe:callto:0908075455"
+                          >0908075455</a
+                        >
+                        <br />
+                        <a class="content" href="unsafe:callto:1900 2852"
+                          >1900 2852</a
+                        >
+                      </li>
+                      <li class="contact-info-item">
+                        <p class="contact content">Email liên hệ</p>
+                        <a class="content" href="mailto:info@tdental.vn"
+                          >info@tdental.vn</a
+                        ><a class="content" href="mailto:"></a>
+                      </li>
+                      <li class="contact-info-item">
+                        <p class="contact content">Liên kết khác</p>
+                        <ul class="social-networks">
+                          <li class="social-fb first">
+                            <a
+                              target="_blank"
+                              class="content"
+                              href="https://www.facebook.com/tposapp"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                fill="currentColor"
+                                class="bi bi-facebook"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-twitter">
+                            <a
+                              target="_blank"
+                              class="content"
+                              href="https://twitter.com/tposvn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                fill="currentColor"
+                                class="bi bi-twitter"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-youtube">
+                            <a
+                              target="_blank"
+                              class="content"
+                              href="https://www.youtube.com/channel/UCnBck1hw35A6znRbL0b-IDQ"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                fill="currentColor"
+                                class="bi bi-youtube"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <form class="contact-form">
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="exampleFormControlInput1"
+                        placeholder="Họ & tên (*)"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="exampleFormControlInput1"
+                        placeholder="Điện thoại (*)"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="exampleFormControlInput1"
+                        placeholder="Địa chỉ email: example@domain.com (*)"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="exampleFormControlInput1"
+                        placeholder="Công ty"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Tỉnh/Thành phố (*)"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <textarea
+                        class="form-control p-3"
+                        id="exampleFormControlTextarea1"
+                        placeholder="Nội dung"
+                        rows="10"
+                        cols="40"
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary button-primary px-5 py-3"
+                    >
+                      Gửi nội dung
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
   </body>

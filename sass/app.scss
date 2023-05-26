@@ -1,0 +1,244 @@
+// code no desktop
+.nav__list {
+  font-size: 16px;
+  line-height: 60px;
+}
+.nav__item {
+  a {
+    color: #233142;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  height: 100vh;
+}
+
+//
+.button-primary {
+  background-color: white;
+  color: #1a4bc2;
+  font-weight: 600;
+  border-radius: 15px;
+  border: 1px solid #1a4bc2;
+  &:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.header {
+  background-color: #1a4bc2;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  &__menu {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+  &__link {
+    color: white;
+  }
+}
+
+/* Slide */
+.slide {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+  color: white;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  .content-list {
+    line-height: 20px;
+  }
+  .content-item {
+    color: #fff;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 24px;
+  }
+
+  .content-check {
+    background-image: url(/image/slide-check.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: -4px;
+  }
+}
+
+/* Feature */
+
+.feature {
+  margin-top: 20px;
+  .title {
+    text-align: center;
+    color: #233142;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content {
+    color: #7b8796;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .card {
+    border: none;
+    align-items: center;
+    gap: 50px;
+    padding: 25px;
+    cursor: pointer;
+    & > img {
+      width: 150px;
+      padding: 20px;
+      border-radius: 100%;
+      box-shadow: 0 10px 20px 0 rgba(218, 225, 233, 0.45);
+      background-color: white;
+    }
+    &:hover .content {
+      color: white;
+    }
+    &:hover .title {
+      color: white;
+    }
+    &:hover {
+      background: #0049b8;
+      border-radius: 24px;
+      box-shadow: 0 10px 20px 0 rgba(148, 162, 177, 0.45);
+      cursor: pointer;
+      color: white;
+      transition: all 0.2s linear;
+    }
+  }
+}
+
+/* Price */
+
+.price {
+  background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  &__desc {
+    color: white;
+  }
+
+  &-table {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
+    border-radius: 24px;
+    max-width: 520px;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  &-name {
+    background: #0049b8;
+    text-align: center;
+    color: white;
+    padding: 32px 0;
+  }
+
+  &-count {
+    font-size: 48px;
+    line-height: 66px;
+    font-weight: 500;
+    color: #0049b8;
+    .desc {
+      font-size: 32px;
+    }
+  }
+  &-content {
+    font-size: 18px;
+    color: #233142;
+    line-height: 25px;
+    .dflex {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      line-height: 50px;
+    }
+  }
+
+  &-table-endow {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
+    border-radius: 24px;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .table-endow {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 30px;
+      .desc {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+  &-text {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-info {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -1px 8px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -145px;
+    &-list {
+      padding: 40px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-item {
+      color: white;
+      font-size: 16px;
+      a {
+        color: white;
+      }
+    }
+    .social-networks {
+      display: flex;
+      padding: 0;
+      gap: 15px;
+    }
+  }
+}
