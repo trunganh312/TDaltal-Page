@@ -4,7 +4,7 @@
 }
 
 .nav__item a {
-  color: #233142;
+  color: var(--text);
 }
 
 .modal-content {
@@ -12,19 +12,25 @@
   height: 100vh;
 }
 
+:root {
+  --primary: #1a4bc2;
+  --white: white;
+  --text: #233142;
+}
+
 .button-primary {
-  background-color: white;
-  color: #1a4bc2;
+  background-color: var(--white);
+  color: var(--primary);
   font-weight: 600;
   border-radius: 15px;
-  border: 1px solid #1a4bc2;
+  border: 1px solid var(--primary);
 }
 .button-primary:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
 }
 
 .header {
-  background-color: #1a4bc2;
+  background-color: var(--primary);
   position: sticky;
   top: 0;
   z-index: 99999;
@@ -34,10 +40,10 @@
   font-size: 16px;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: var(--white);
 }
 .header__link {
-  color: white;
+  color: var(--white);
 }
 
 /* Slide */
@@ -45,7 +51,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
-  color: white;
+  color: var(--white);
 }
 .slide__content {
   display: flex;
@@ -80,7 +86,7 @@
 }
 .feature .title {
   text-align: center;
-  color: #233142;
+  color: var(--text);
   font-size: 20px;
   font-weight: 600;
 }
@@ -106,20 +112,20 @@
   padding: 20px;
   border-radius: 100%;
   box-shadow: 0 10px 20px 0 rgba(218, 225, 233, 0.45);
-  background-color: white;
+  background-color: var(--white);
 }
 .feature .card:hover .content {
-  color: white;
+  color: var(--white);
 }
 .feature .card:hover .title {
-  color: white;
+  color: var(--white);
 }
 .feature .card:hover {
   background: #0049b8;
   border-radius: 24px;
   box-shadow: 0 10px 20px 0 rgba(148, 162, 177, 0.45);
   cursor: pointer;
-  color: white;
+  color: var(--white);
   transition: all 0.2s linear;
 }
 
@@ -134,7 +140,7 @@
   gap: 25px;
 }
 .price__desc {
-  color: white;
+  color: var(--white);
 }
 .price-table {
   background: #fff;
@@ -142,15 +148,19 @@
   box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
   border-radius: 24px;
   max-width: 520px;
-  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  height: 100%;
+  position: relative;
+}
+.price-note {
+  width: 100%;
 }
 .price-name {
   background: #0049b8;
   text-align: center;
-  color: white;
+  color: var(--white);
   padding: 32px 0;
 }
 .price-count {
@@ -164,8 +174,10 @@
 }
 .price-content {
   font-size: 18px;
-  color: #233142;
+  color: var(--text);
   line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .price-content .dflex {
   display: flex;
@@ -216,11 +228,11 @@
   gap: 30px;
 }
 .contact-info-item {
-  color: white;
+  color: var(--white);
   font-size: 16px;
 }
 .contact-info-item a {
-  color: white;
+  color: var(--white);
 }
 .contact-info .social-networks {
   display: flex;

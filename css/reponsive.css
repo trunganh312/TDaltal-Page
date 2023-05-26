@@ -42,7 +42,7 @@
   .fs-14-mobile {
     font-size: 14px !important;
   }
-  .fs-18 {
+  .fs-18-mobile {
     font-size: 18px !important;
   }
 }
@@ -58,5 +58,11 @@
 
   .hidden-tablet {
     display: none;
+  }
+  .fs-14-tablet {
+    font-size: 14px !important;
+  }
+  .fs-18-tablet {
+    font-size: 18px !important;
   }
 }

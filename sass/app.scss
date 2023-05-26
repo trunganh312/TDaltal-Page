@@ -5,7 +5,7 @@
 }
 .nav__item {
   a {
-    color: #233142;
+    color: var(--text);
   }
 }
 
@@ -15,19 +15,26 @@
 }
 
 //
+
+:root {
+  --primary: #1a4bc2;
+  --white: white;
+  --text: #233142;
+}
+
 .button-primary {
-  background-color: white;
-  color: #1a4bc2;
+  background-color: var(--white);
+  color: var(--primary);
   font-weight: 600;
   border-radius: 15px;
-  border: 1px solid #1a4bc2;
+  border: 1px solid var(--primary);
   &:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
   }
 }
 
 .header {
-  background-color: #1a4bc2;
+  background-color: var(--primary);
   position: sticky;
   top: 0;
   z-index: 99999;
@@ -36,11 +43,11 @@
     font-size: 16px;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: var(--white);
   }
 
   &__link {
-    color: white;
+    color: var(--white);
   }
 }
 
@@ -49,7 +56,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
-  color: white;
+  color: var(--white);
   &__content {
     display: flex;
     flex-direction: column;
@@ -80,12 +87,11 @@
 }
 
 /* Feature */
-
 .feature {
   margin-top: 20px;
   .title {
     text-align: center;
-    color: #233142;
+    color: var(--text);
     font-size: 20px;
     font-weight: 600;
   }
@@ -113,20 +119,20 @@
       padding: 20px;
       border-radius: 100%;
       box-shadow: 0 10px 20px 0 rgba(218, 225, 233, 0.45);
-      background-color: white;
+      background-color: var(--white);
     }
     &:hover .content {
-      color: white;
+      color: var(--white);
     }
     &:hover .title {
-      color: white;
+      color: var(--white);
     }
     &:hover {
       background: #0049b8;
       border-radius: 24px;
       box-shadow: 0 10px 20px 0 rgba(148, 162, 177, 0.45);
       cursor: pointer;
-      color: white;
+      color: var(--white);
       transition: all 0.2s linear;
     }
   }
@@ -143,7 +149,7 @@
     gap: 25px;
   }
   &__desc {
-    color: white;
+    color: var(--white);
   }
 
   &-table {
@@ -152,16 +158,19 @@
     box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
     border-radius: 24px;
     max-width: 520px;
-    flex: 0 0 100%;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    height: 100%;
+    position: relative;
   }
-
+  &-note {
+    width: 100%;
+  }
   &-name {
     background: #0049b8;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 32px 0;
   }
 
@@ -176,10 +185,10 @@
   }
   &-content {
     font-size: 18px;
-    color: #233142;
+    color: var(--text);
     line-height: 25px;
     margin-top: 30px;
-    min-height: 456px;
+    margin-bottom: 100px;
     .dflex {
       display: flex;
       gap: 20px;
@@ -231,10 +240,10 @@
       gap: 30px;
     }
     &-item {
-      color: white;
+      color: var(--white);
       font-size: 16px;
       a {
-        color: white;
+        color: var(--white);
       }
     }
     .social-networks {
