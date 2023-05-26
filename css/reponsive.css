@@ -39,11 +39,11 @@
   .hide-mobile {
     display: none;
   }
-  .fs-14-mobile {
-    font-size: 14px !important;
+  .fs-12-mobile {
+    font-size: 12px !important;
   }
-  .fs-18-mobile {
-    font-size: 18px !important;
+  .fs-16-mobile {
+    font-size: 16px !important;
   }
 }
 
