@@ -1,3 +1,4 @@
+/* Màn hình tablet, mobile */
 @media screen and (max-width: 991.98px) {
   .modal-dialog {
     margin: 0;
@@ -8,24 +9,10 @@
   .hidden {
     display: none;
   }
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-  .text--center {
-    text-align: center;
-  }
 }
 
 /* Màn hình desktop */
 @media screen and (min-width: 992px) {
-  .hide-btn {
-    display: none;
-  }
-
-  .hidden-block {
-    display: none;
-  }
 }
 
 /* Màn hình mobile */
@@ -36,9 +23,7 @@
     height: 100vh;
     max-width: 300px;
   }
-  .hide-mobile {
-    display: none;
-  }
+
   .fs-12-mobile {
     font-size: 12px !important;
   }
@@ -46,9 +31,8 @@
     font-size: 16px !important;
   }
 
-  .line-height-mobile {
-    font-size: 16px !important;
-    line-height: 30px !important;
+  .hidden {
+    display: none;
   }
 
   .mt-20-mobile {
@@ -65,9 +49,6 @@
     max-width: 300px;
   }
 
-  .hidden-tablet {
-    display: none;
-  }
   .fs-14-tablet {
     font-size: 14px !important;
   }

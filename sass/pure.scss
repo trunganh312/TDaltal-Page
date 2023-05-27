@@ -1,0 +1,235 @@
+// code no desktop
+.nav__list {
+  font-size: 16px;
+  line-height: 60px;
+}
+.nav__item {
+  a {
+    color: var(--text);
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  height: 100vh;
+}
+
+:root {
+  --primary: #1a4bc2;
+  --white: white;
+  --text: #233142;
+}
+
+.header {
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  &__menu {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+  }
+
+  &__link {
+    color: var(--white);
+  }
+}
+
+/* Slide */
+.slide {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+  color: var(--white);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  .content-list {
+    line-height: 20px;
+  }
+  .content-item {
+    color: #fff;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Feature */
+.feature {
+  margin-top: 20px;
+  .title {
+    text-align: center;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    border: none;
+    align-items: center;
+    gap: 50px;
+    padding: 25px;
+    cursor: pointer;
+    & > img {
+      width: 150px;
+      padding: 20px;
+      border-radius: 100%;
+      box-shadow: 0 10px 20px 0 rgba(218, 225, 233, 0.45);
+      background-color: var(--white);
+    }
+    &:hover .content {
+      color: var(--white) !important;
+    }
+    &:hover .title {
+      color: var(--white) !important;
+    }
+    &:hover {
+      background: #0049b8;
+      border-radius: 24px;
+      box-shadow: 0 10px 20px 0 rgba(148, 162, 177, 0.45);
+      cursor: pointer;
+      color: var(--white);
+      transition: all 0.2s linear;
+    }
+  }
+
+  .content {
+    color: #7b8796;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+/* Price */
+
+.price {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  &__desc {
+    color: var(--white);
+  }
+
+  &-table {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
+    border-radius: 24px;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 100%;
+    position: relative;
+  }
+  &-note {
+    width: 100%;
+  }
+  &-name {
+    background: #0049b8;
+    text-align: center;
+    color: var(--white);
+    padding: 32px 0;
+  }
+
+  &-count {
+    font-size: 48px;
+    line-height: 66px;
+    font-weight: 500;
+    color: #0049b8;
+    .desc {
+      font-size: 32px;
+    }
+  }
+  &-content {
+    font-size: 18px;
+    color: var(--text);
+    line-height: 25px;
+
+    .dflex {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      line-height: 50px;
+    }
+  }
+
+  &-table-endow {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(122, 135, 151, 0.25);
+    border-radius: 24px;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .table-endow {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 30px;
+      .desc {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  &__desc {
+    color: var(--white);
+  }
+  &-text {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-info {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -1px 8px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -145px;
+    &-list {
+      padding: 40px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-item {
+      color: var(--white);
+      font-size: 16px;
+      a {
+        color: var(--white);
+      }
+    }
+    .social-networks {
+      display: flex;
+      padding: 0;
+      gap: 15px;
+    }
+  }
+}

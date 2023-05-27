@@ -25,8 +25,11 @@
   <body>
     <div class="app">
       <!-- HEADER -->
-      <header class="container-fluid header center">
-        <div class="container py-4 center">
+      <header
+        class="container-fluid position-sticky top-0 d-md-flex d-sm-flex justify-content-center"
+        style="background-color: #1a4bc2; z-index: 99999"
+      >
+        <div class="container py-4 d-md-flex d-sm-flex justify-content-center">
           <div class="row">
             <div class="col-lg-5 col-sm-12 col-xs-12">
               <a href="#">
@@ -38,17 +41,20 @@
             </div>
             <!-- Header desktop -->
             <nav class="col-lg-7 hidden">
-              <ul class="header__menu">
-                <li class="header__item">
-                  <a class="header__link" aria-current="page" href="#">Home</a>
+              <ul
+                class="d-flex fs-6 align-items-center justify-content-around"
+                style="color: white"
+              >
+                <li>
+                  <a class="text-white" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link" href="#price-page">Bảng giá</a>
+                <li>
+                  <a class="text-white" href="#price-page">Bảng giá</a>
                 </li>
-                <li class="header__item">
-                  <a class="header__link" href="#contact-page">Liên hệ</a>
+                <li>
+                  <a class="text-white" href="#contact-page">Liên hệ</a>
                 </li>
-                <li class="header__item">
+                <li>
                   <button
                     type="button"
                     class="btn-primary px-4 py-3 button-primary"
@@ -65,7 +71,7 @@
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
-          class="hide-btn"
+          class="d-lg-none d-xl-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +94,7 @@
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog d-lg-none d-xl-none">
             <div class="modal-content">
               <div class="modal-header">
                 <a href="#">
@@ -106,16 +112,18 @@
               </div>
               <div class="modal-body">
                 <ul class="nav__list">
-                  <li class="nav__item">
-                    <a class="nav__link" aria-current="page" href="#">Home</a>
+                  <li>
+                    <a class="text-primary" aria-current="page" href="#"
+                      >Home</a
+                    >
                   </li>
-                  <li class="nav__item">
-                    <a class="nav__link" href="#price-page">Bảng giá</a>
+                  <li>
+                    <a class="text-primary" href="#price-page">Bảng giá</a>
                   </li>
-                  <li class="nav__item">
-                    <a class="nav__link" href="#contact-page">Liên hệ</a>
+                  <li>
+                    <a class="text-primary" href="#contact-page">Liên hệ</a>
                   </li>
-                  <li class="nav__item">
+                  <li>
                     <button
                       type="button"
                       class="btn-primary button-primary px-4"
@@ -131,24 +139,29 @@
       </header>
       <!-- HOME PAGE -->
       <div id="home-page">
-        <div class="container-fluid slide">
+        <div
+          class="container-fluid slide pt-5 pb-5 text-white"
+          style="
+            background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+          "
+        >
           <div class="container">
+            <!-- desktop -->
             <div class="row hidden">
-              <!-- desktop -->
               <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="slide__content">
+                <div class="d-flex flex-column gap-4">
                   <p class="h2">Phần mềm quản lý nha khoa chuyên nghiệp nhất</p>
-                  <p class="h5">TDental</p>
-                  <ul class="content-list">
-                    <li class="content-item">
+                  <p class="h1 fs-48">TDental</p>
+                  <ul class="lh-sm">
+                    <li class="position-relative text-white mx-3 mb-3">
                       <span class="content-check"></span> Quản lý nhanh chóng,
                       tiết kiệm thời gian
                     </li>
-                    <li class="content-item">
+                    <li class="position-relative text-white mx-3 mb-3">
                       <span class="content-check"></span> Chuyên nghiệp hóa quy
                       trình làm việc của phòng khám
                     </li>
-                    <li class="content-item">
+                    <li class="position-relative text-white mx-3 mb-3">
                       <span class="content-check"></span> Nâng cao hiệu quả kinh
                       doanh nhanh chóng và liên tục
                     </li>
@@ -173,11 +186,11 @@
               </div>
             </div>
             <!-- Mobile, tablet -->
-            <div class="row hidden-block">
+            <div class="row d-lg-none d-xl-none">
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="slide__content text-center">
                   <p class="h2">Phần mềm quản lý nha khoa chuyên nghiệp nhất</p>
-                  <p class="h1">TDental</p>
+                  <p class="h1 fs-48">TDental</p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12">
@@ -195,16 +208,16 @@
                     Dùng thử miễn phí
                   </button>
                 </span>
-                <ul class="content-list">
-                  <li class="content-item">
+                <ul class="lh-sm">
+                  <li class="position-relative text-white mx-3 mb-3">
                     <span class="content-check"></span> Quản lý nhanh chóng,
                     tiết kiệm thời gian
                   </li>
-                  <li class="content-item">
+                  <li class="position-relative text-white mx-3 mb-3">
                     <span class="content-check"></span> Chuyên nghiệp hóa quy
                     trình làm việc của phòng khám
                   </li>
-                  <li class="content-item">
+                  <li class="position-relative text-white mx-3 mb-3">
                     <span class="content-check"></span> Nâng cao hiệu quả kinh
                     doanh nhanh chóng và liên tục
                   </li>
@@ -214,7 +227,7 @@
           </div>
         </div>
         <!-- FEATURE -->
-        <div class="feature container-fluid">
+        <div class="container-fluid mt-2">
           <div class="container container-sm">
             <div class="row">
               <div class="col-md-12 col-sm-12">
@@ -227,9 +240,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Quản lý công nợ</div>
-                    <div class="content">
+                  <div class="card-body d-flex flex-column gap-4">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Quản lý công nợ
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         Cho bạn những số liệu thống kê chi tiết và chính xác
                         nhất về công nợ của khách hàng và nhà cung cấp.
@@ -245,9 +264,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Hệ thống báo cáo chi tiết</div>
-                    <div class="content">
+                  <div class="card-body d-flex flex-column gap-4">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Hệ thống báo cáo chi tiết
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         Cung cấp cho bạn những mẫu báo cáo thống kê rành mạch
                         nhất về mọi hoạt động kinh doanh của phòng khám.
@@ -263,9 +288,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Hệ thống báo cáo chi tiết</div>
-                    <div class="content">
+                  <div class="card-body d-flex flex-column gap-4">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Hệ thống báo cáo chi tiết
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         Cung cấp cho bạn những mẫu báo cáo thống kê rành mạch
                         nhất về mọi hoạt động kinh doanh của phòng khám.
@@ -281,9 +312,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Quản lý công đoạn bệnh</div>
-                    <div class="content">
+                  <div class="card-body d-flex flex-column gap-4">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Quản lý công đoạn bệnh
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         TDental giúp bạn nắm bắt tình hình bệnh nhân qua các
                         công đoạn điều trị nhanh chóng và kịp thời nhất.
@@ -299,9 +336,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Quản lý thông tin bệnh nhân</div>
-                    <div class="content">
+                  <div class="card-body d-flex flex-column gap-4">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Quản lý thông tin bệnh nhân
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         Cho bạn cái nhìn tổng quát về từng bệnh nhân của mình
                         bằng các thông tin hành chính và tiểu sử bệnh chi tiết
@@ -318,9 +361,15 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <div class="title">Nhắc lịch hẹn khám, tái khám</div>
-                    <div class="content">
+                  <div class="d-flex flex-column gap-4 card-body">
+                    <div
+                      class="title text-center text-primary fw-semibold fs-5"
+                    >
+                      Nhắc lịch hẹn khám, tái khám
+                    </div>
+                    <div
+                      class="content text-gray fw-normal lh-lg lh-sm text-center"
+                    >
                       <p>
                         Thông báo và nhắc lịch hẹn khám, tái khám đến khách hàng
                         chứa đầy đủ thông tin khách và bác sĩ điều trị.
@@ -345,13 +394,18 @@
       </div>
       <!-- PRICE PAGE -->
       <div id="price-page">
-        <div class="container-fluid price text-white p-5">
+        <div
+          class="container-fluid price text-white p-5"
+          style="
+            background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+          "
+        >
           <div class="container">
-            <div class="price__content">
+            <div class="d-flex align-items-center flex-column gap-4">
               <p class="h3 text-white">Bảng giá phần mềm nha khoa</p>
               <span class="h1">TDental</span>
 
-              <div class="price__desc">
+              <div class="text-white">
                 Bạn có thể dùng thử miễn phí trước khi quyết định sử dụng!
               </div>
               <button
@@ -363,26 +417,32 @@
             </div>
           </div>
         </div>
-        <div class="price__body mt-5 mb-5">
+        <div class="mt-5 mb-5">
           <div class="container">
             <p class="h1 text-center mb-5">Bảng giá các gói dịch vụ TDental</p>
             <div class="row">
               <!-- Card 1 -->
               <div class="col-md-6 col-sm-12">
-                <div class="price-table">
-                  <div class="price-name">
-                    <p class="h2">Gói TDental</p>
+                <div
+                  class="bg-white overflow-hidden shadow-lg rounded-5 d-flex flex-column mt-4 h-100 position-relative"
+                  style="max-width: 520px"
+                >
+                  <div class="text-white py-4 bg-primary-ct text-center">
+                    <p class="h1">Gói TDental</p>
                   </div>
-                  <div class="price-count text-center">
-                    <p class="mb-0">300,000 đ</p>
-                    <p class="mb-0 desc">1 tháng/1 chi nhánh</p>
+                  <div class="text-center text-primary-blue fs-1 lh-base mt-4">
+                    <p class="mb-0 fs-48 fw-medium">300,000 đ</p>
+                    <p class="mb-0 fs-32">1 tháng/1 chi nhánh</p>
                   </div>
-                  <div class="price-content px-5">
+                  <div
+                    style="margin-top: 30px; margin-bottom: 100px"
+                    class="fs-18 text-primary lh-lg px-5"
+                  >
                     <p class="text-center mb-0">
                       Dành cho những phòng khám hiện đại.
                     </p>
                     <p class="text-center"></p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -397,7 +457,7 @@
                       </svg>
                       Không giới hạn phiếu điều trị
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -412,7 +472,7 @@
                       </svg>
                       Không giới hạn lượng khách hàng
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -429,7 +489,7 @@
                     </p>
                   </div>
                   <div
-                    class="price-note px-6 py-5 text-center"
+                    class="w-100 px-6 py-5 text-center"
                     style="position: absolute; bottom: 0"
                   >
                     <button
@@ -443,21 +503,29 @@
               </div>
               <!-- Card 2 -->
               <div class="col-md-6 col-sm-12 mt-20-mobile mt-20-tablet">
-                <div class="price-table">
-                  <div class="price-name">
-                    <p class="h2">Gói TDental</p>
+                <div
+                  class="bg-white overflow-hidden shadow-lg rounded-5 d-flex flex-column mt-4 h-100 position-relative"
+                >
+                  <div class="text-white py-4 bg-primary-ct text-center">
+                    <p class="h1">Gói TDental PRO</p>
                   </div>
-                  <div class="price-count text-center">
-                    <p class="mb-0">500,000 đ</p>
-                    <p class="mb-0 desc">1 tháng/1 chi nhánh</p>
+                  <div
+                    class="text-center text-primary-blue fs-1 lh-base mt-4"
+                    style="margin-top: 30px"
+                  >
+                    <p class="mb-0 fw-medium fs-48">500,000 đ</p>
+                    <p class="mb-0 fs-32">1 tháng/1 chi nhánh</p>
                   </div>
-                  <div class="price-content px-5">
+                  <div
+                    style="margin-bottom: 100px; margin-top: 30px"
+                    class="fs-18 text-primary lh-lg px-5"
+                  >
                     <p class="text-center mb-0">
                       Dành cho những phòng khám hiện đại. Cập nhật tính năng
                       theo xu hướng mới
                     </p>
                     <p class="text-center"></p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -472,7 +540,7 @@
                       </svg>
                       Không giới hạn phiếu điều trị
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -487,7 +555,7 @@
                       </svg>
                       Không giới hạn lượng khách hàng
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -502,7 +570,7 @@
                       </svg>
                       Không giới hạn số người dùng
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -517,7 +585,7 @@
                       </svg>
                       Không giới hạn số người dùng
                     </p>
-                    <p class="dflex line-height-mobile">
+                    <p class="d-flex align-items-center gap-4 fs-16">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -534,7 +602,7 @@
                     </p>
                   </div>
                   <div
-                    class="price-note px-6 py-5 text-center"
+                    class="w-100 px-6 py-5 text-center"
                     style="bottom: 0; position: absolute"
                   >
                     <button
@@ -546,33 +614,53 @@
                   </div>
                 </div>
               </div>
-              <!-- Card 2 -->
+              <!-- Card 3 -->
               <div class="col-md-12 col-sm-12">
-                <div class="price-table-endow">
-                  <div class="price-name">
+                <div
+                  class="bg-white overflow-hidden shadow-lg rounded-5 d-flex flex-column mt-5"
+                >
+                  <div class="text-white py-4 bg-primary-ct text-center">
                     <p class="h1">Ưu đãi</p>
                   </div>
-                  <div class="table-endow">
+                  <div class="d-flex justify-content-around my-4">
                     <div class="price-count text-center">
-                      <p class="h1 fs-16-mobile fs-18-tablet">Tặng 2 tháng</p>
-                      <p class="desc fs-12-mobile fs-14-tablet">
+                      <p
+                        class="h2 fs-16-mobile fs-18-tablet text-primary-blue fw-medium"
+                      >
+                        Tặng 2 tháng
+                      </p>
+                      <p
+                        class="fs-18 mt-2 fs-12-mobile fs-14-tablet text-primary-blue"
+                      >
                         Khi mua gói 1 năm
                       </p>
                     </div>
                     <div class="price-count text-center">
-                      <p class="h1 fs-16-mobile fs-18-tablet">Tặng 6 tháng</p>
-                      <p class="desc fs-12-mobile fs-14-tablet">
+                      <p
+                        class="h2 fs-16-mobile fs-18-tablet text-primary-blue fw-medium"
+                      >
+                        Tặng 6 tháng
+                      </p>
+                      <p
+                        class="fs-18 mt-2 fs-12-mobile fs-14-tablet text-primary-blue"
+                      >
                         Khi mua gói 2 năm
                       </p>
                     </div>
                     <div class="price-count text-center">
-                      <p class="h1 fs-16-mobile fs-18-tablet">Tặng 12 tháng</p>
-                      <p class="desc fs-12-mobile fs-14-tablet">
+                      <p
+                        class="h2 fs-16-mobile fs-18-tablet text-primary-blue fw-medium"
+                      >
+                        Tặng 12 tháng
+                      </p>
+                      <p
+                        class="fs-18 mt-2 fs-12-mobile fs-14-tablet text-primary-blue"
+                      >
                         Khi mua gói 3 năm
                       </p>
                     </div>
                   </div>
-                  <div class="price-note mb-5 text-center">
+                  <div class="w-100 mb-5 text-center">
                     <button
                       class="btn-primary btn px-5 py-3 button-primary"
                       title="Phần mềm quản lý nha khoa TDental"
@@ -588,13 +676,18 @@
       </div>
       <!-- CONTACT PAGE -->
       <div id="contact-page">
-        <div class="container-fluid contact text-white p-5">
+        <div
+          class="container-fluid text-white p-5"
+          style="
+            background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
+          "
+        >
           <div class="container">
-            <div class="price__content">
+            <div class="d-flex align-items-center flex-column gap-4">
               <p class="h3 text-white">Liên hệ</p>
-              <span class="h1">TDental</span>
+              <p class="fs-48 h1">TDental</p>
 
-              <div class="price__desc">
+              <div class="text-white">
                 Liên hệ với chúng tôi ngay khi bạn cần
               </div>
               <button
@@ -611,7 +704,7 @@
             <div class="col-md-5"></div>
             <!-- TEXT -->
             <div class="col-md-7">
-              <div class="contact-text">
+              <div class="cd-flex flex-column align-items-center p-5">
                 <p class="h1">Gửi yêu cầu liên hệ</p>
                 <span>Hãy để TDental giải đáp thắc mắc của quý khách</span>
               </div>
@@ -622,42 +715,48 @@
               <div class="row">
                 <!-- CARD -->
                 <div class="col-md-5">
-                  <div class="contact-info hide-mobile hidden-tablet">
+                  <div
+                    class="d-lg-block hidden d-sm-none d-md-none shadow-lg rounded-3 overflow-hidden"
+                    style="margin-top: -145px"
+                  >
                     <ul
-                      class="contact-info-list"
+                      class="p-5 flex-column d-flex gap-3"
                       style="
                         background-image: url(/image/banner-slide-phan-mem-quan-ly-nha-khoa.jpg);
                       "
                     >
                       <li class="contact-info-item">
-                        <p class="contact content">Địa chỉ</p>
-                        <p class="content">
-                          54/35 Diệp Minh Châu, Tân Sơn Nhì, Tân Phú
-                        </p>
+                        <p>Địa chỉ</p>
+                        <p>54/35 Diệp Minh Châu, Tân Sơn Nhì, Tân Phú</p>
                       </li>
-                      <li class="contact-info-item">
-                        <p class="contact content">Điện thoại</p>
-                        <a class="content" href="unsafe:callto:0908075455"
+                      <li class="contact-info-item flex-column d-flex gap-1">
+                        <p>Điện thoại</p>
+                        <a
+                          href="#"
+                          class="link-danger"
+                          href="unsafe:callto:0908075455"
                           >0908075455</a
                         >
-                        <br />
-                        <a class="content" href="unsafe:callto:1900 2852"
+                        <a
+                          href="#"
+                          class="link-danger"
+                          href="unsafe:callto:1900 2852"
                           >1900 2852</a
                         >
                       </li>
                       <li class="contact-info-item">
-                        <p class="contact content">Email liên hệ</p>
-                        <a class="content" href="mailto:info@tdental.vn"
+                        <p>Email liên hệ</p>
+                        <a href="mailto:info@tdental.vn" class="link-danger"
                           >info@tdental.vn</a
-                        ><a class="content" href="mailto:"></a>
+                        >
                       </li>
                       <li class="contact-info-item">
-                        <p class="contact content">Liên kết khác</p>
-                        <ul class="social-networks">
+                        <p>Liên kết khác</p>
+                        <ul class="d-flex p-0 gap-3">
                           <li class="social-fb first">
                             <a
                               target="_blank"
-                              class="content"
+                              class="content link-danger"
                               href="https://www.facebook.com/tposapp"
                             >
                               <svg
@@ -677,7 +776,7 @@
                           <li class="social-twitter">
                             <a
                               target="_blank"
-                              class="content"
+                              class="content link-danger"
                               href="https://twitter.com/tposvn"
                               ><svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -696,7 +795,7 @@
                           <li class="social-youtube">
                             <a
                               target="_blank"
-                              class="content"
+                              class="content link-danger"
                               href="https://www.youtube.com/channel/UCnBck1hw35A6znRbL0b-IDQ"
                               ><svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -757,7 +856,7 @@
                         class="form-select"
                         aria-label="Tỉnh/Thành phố (*)"
                       >
-                        <option selected>Open this select menu</option>
+                        <option selected>Tỉnh/Thành phố (*)</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
