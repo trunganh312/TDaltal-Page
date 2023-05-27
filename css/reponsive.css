@@ -80,4 +80,8 @@
   .mt-20-tablet {
     margin-top: 20px;
   }
+
+  .py-10 {
+    padding: 10px 0 !important;
+  }
 }
