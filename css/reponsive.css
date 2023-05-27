@@ -9,6 +9,11 @@
   .hidden {
     display: none;
   }
+
+  .dlex-center {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Màn hình desktop */
