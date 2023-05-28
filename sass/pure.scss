@@ -14,11 +14,9 @@
   height: 100vh;
 }
 
-:root {
-  --primary: #1a4bc2;
-  --white: white;
-  --text: #233142;
-}
+$primary: #1a4bc2;
+$white: white;
+$text: #233142;
 
 .header {
   background-color: var(--primary);

@@ -54,7 +54,7 @@
     padding: 10px 0 !important;
   }
   .my-10-mobile {
-    margin: 10px 0 !important;
+    margin: 20px 15px !important;
   }
   .mt-20-mobile {
     margin-top: 20px;
@@ -83,5 +83,11 @@
 
   .py-10 {
     padding: 10px 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mt--130 {
+    margin-top: -130px !important;
   }
 }
