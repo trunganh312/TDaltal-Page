@@ -1,3 +1,6 @@
+@import "./reset";
+@import "./variable";
+
 // code no desktop
 .nav__list {
   font-size: 16px;
@@ -15,10 +18,6 @@
 }
 
 //
-
-$primary: #1a4bc2;
-$white: white;
-$text: #233142;
 
 .button-primary {
   background-color: $white;
@@ -73,6 +72,7 @@ $text: #233142;
 }
 
 .hover {
+  color: white;
   &:hover {
     transition: all 0.2s ease;
     color: #ff2739;
@@ -108,3 +108,5 @@ $text: #233142;
     transition: all 0.2s linear;
   }
 }
+
+@import "./reponsive";

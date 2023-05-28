@@ -1,0 +1,92 @@
+@media screen and (max-width: 991.98px) {
+  .modal-dialog {
+    margin: 0;
+    border-radius: 0px;
+    height: 100vh;
+    max-width: 300px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .dlex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mb-card-info {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Màn hình desktop */
+@media screen and (min-width: 992px) {
+}
+
+/* Màn hình mobile */
+@media screen and (max-width: 575.98px) {
+  .modal-dialog {
+    margin: 0;
+    border-radius: 0px;
+    height: 100vh;
+    max-width: 300px;
+  }
+
+  .fs-12-mobile {
+    font-size: 12px !important;
+  }
+  .fs-16-mobile {
+    font-size: 16px !important;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .px-xs-0 {
+    padding: 5px 0 !important;
+  }
+  .px-xs-10 {
+    padding: 0 10px !important;
+  }
+  .py-10-mobile {
+    padding: 10px 0 !important;
+  }
+  .my-10-mobile {
+    margin: 20px 15px !important;
+  }
+  .mt-20-mobile {
+    margin-top: 20px;
+  }
+}
+
+/* Màn hình tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .modal-dialog {
+    margin: 0;
+    border-radius: 0px;
+    height: 100vh;
+    max-width: 300px;
+  }
+
+  .fs-14-tablet {
+    font-size: 14px !important;
+  }
+  .fs-18-tablet {
+    font-size: 18px !important;
+  }
+
+  .mt-20-tablet {
+    margin-top: 20px;
+  }
+
+  .py-10 {
+    padding: 10px 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mt--130 {
+    margin-top: -130px !important;
+  }
+}
